@@ -1,0 +1,197 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "answer": "HyperText Markup Language",
+    "choices": [
+      "HyperText Markdown Language",
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Hyper Transfer Markup Language"
+    ],
+    "points": 3
+  },
+  {
+    "question": "Which programming language is known as the backbone of web development?",
+    "answer": "JavaScript",
+    "choices": ["Python", "C++", "JavaScript", "Ruby"],
+    "points": 4
+  },
+  {
+    "question": "What CSS property is used to change text color?",
+    "answer": "color",
+    "choices": ["text-color", "color", "font-color", "foreground"],
+    "points": 2
+  },
+  {
+    "question": "Which of the following is a JavaScript framework?",
+    "answer": "React",
+    "choices": ["Laravel", "Django", "React", "Flask"],
+    "points": 4
+  },
+  {
+    "question": "What is the purpose of the <head> tag in HTML?",
+    "answer": "Contains metadata about the document",
+    "choices": [
+      "Defines the main content",
+      "Contains metadata about the document",
+      "Creates a heading",
+      "Links to external CSS"
+    ],
+    "points": 3
+  },
+  {
+    "question": "What is the default display property of a <div> element?",
+    "answer": "block",
+    "choices": ["inline", "block", "flex", "grid"],
+    "points": 3
+  },
+  {
+    "question": "Which HTTP status code indicates 'Not Found'?",
+    "answer": "404",
+    "choices": ["200", "500", "404", "302"],
+    "points": 2
+  },
+  {
+    "question": "Which JavaScript method is used to select an element by ID?",
+    "answer": "document.getElementById",
+    "choices": [
+      "document.querySelector",
+      "document.getElementById",
+      "document.getElementByClass",
+      "document.selectElement"
+    ],
+    "points": 3
+  },
+  {
+    "question": "Which of the following is NOT a valid JavaScript data type?",
+    "answer": "Character",
+    "choices": ["Number", "String", "Boolean", "Character"],
+    "points": 3
+  },
+  {
+    "question": "Which of the following is a valid way to declare a JavaScript variable?",
+    "answer": "let x = 10;",
+    "choices": [
+      "var x = 10;",
+      "let x = 10;",
+      "const x = 10;",
+      "All of the above"
+    ],
+    "points": 4
+  },
+  {
+    "question": "Which SQL command is used to retrieve data from a database?",
+    "answer": "SELECT",
+    "choices": ["SELECT", "INSERT", "UPDATE", "DELETE"],
+    "points": 2
+  },
+  {
+    "question": "Which programming language is known for its use in data science?",
+    "answer": "Python",
+    "choices": ["Java", "Python", "C#", "Swift"],
+    "points": 4
+  },
+  {
+    "question": "What does the acronym CSS stand for?",
+    "answer": "Cascading Style Sheets",
+    "choices": [
+      "Creative Style Sheets",
+      "Computer Style Sheets",
+      "Cascading Style Sheets",
+      "Colorful Style Sheets"
+    ],
+    "points": 2
+  },
+  {
+    "question": "Which HTML element is used for the largest heading?",
+    "answer": "<h1>",
+    "choices": ["<h6>", "<h3>", "<h1>", "<h2>"],
+    "points": 2
+  },
+  {
+    "question": "Which array method removes the last element in JavaScript?",
+    "answer": "pop()",
+    "choices": ["push()", "pop()", "shift()", "unshift()"],
+    "points": 3
+  },
+  {
+    "question": "What does the 'this' keyword refer to in JavaScript?",
+    "answer": "The object it belongs to",
+    "choices": [
+      "The global object",
+      "The object it belongs to",
+      "A new object",
+      "An undefined variable"
+    ],
+    "points": 4
+  },
+  {
+    "question": "Which of the following is a version control system?",
+    "answer": "Git",
+    "choices": ["Git", "JIRA", "Docker", "AWS"],
+    "points": 4
+  },
+  {
+    "question": "Which CSS property is used to create space between elements?",
+    "answer": "margin",
+    "choices": ["padding", "margin", "border", "spacing"],
+    "points": 3
+  },
+  {
+    "question": "Which of the following is not a valid JavaScript loop?",
+    "answer": "foreach",
+    "choices": ["for", "while", "foreach", "do-while"],
+    "points": 3
+  },
+  {
+    "question": "What is the correct way to write an IF statement in JavaScript?",
+    "answer": "if (condition) { }",
+    "choices": [
+      "if condition then {}",
+      "if (condition) { }",
+      "if {condition}",
+      "if condition {}"
+    ],
+    "points": 2
+  },
+  {
+    "question": "What is the primary purpose of JSON?",
+    "answer": "Data exchange",
+    "choices": [
+      "Styling web pages",
+      "Data exchange",
+      "Server-side scripting",
+      "Creating databases"
+    ],
+    "points": 3
+  },
+  {
+    "question": "Which SQL command is used to remove a record from a table?",
+    "answer": "DELETE",
+    "choices": ["REMOVE", "DELETE", "DROP", "ERASE"],
+    "points": 2
+  },
+  {
+    "question": "Which of the following is a relational database management system?",
+    "answer": "MySQL",
+    "choices": ["MongoDB", "Redis", "MySQL", "Cassandra"],
+    "points": 3
+  },
+  {
+    "question": "Which JavaScript function converts a string into a number?",
+    "answer": "parseInt()",
+    "choices": ["parseInt()", "toNumber()", "stringToNum()", "int()"],
+    "points": 3
+  },
+  {
+    "question": "What is the purpose of the 'alt' attribute in an <img> tag?",
+    "answer": "Provides alternative text",
+    "choices": [
+      "Provides alternative text",
+      "Changes image size",
+      "Adds a caption",
+      "Links to an image"
+    ],
+    "points": 2
+  }
+]
