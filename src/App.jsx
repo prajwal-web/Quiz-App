@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Typography, Box } from "@mui/material";
 import Quiz from "./Components/quiz";
-import { useState } from "react";
 import PlayCircleFilledWhiteIcon from "@mui/icons-material/PlayCircleFilledWhite";
 
 const App = () => {

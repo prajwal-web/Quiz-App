@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Card,
   Box,
@@ -18,16 +18,18 @@ console.log(questions);
 
 const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  console.log(currentQuestion);
-  const [selectedAnswer, setSelectedAnswer] = useState("");
-  console.log(selectedAnswer);
+  const [userAnswers, setUserAnswers] = useState([]);
+  console.log("userAns " + userAnswers);
+  const [correctAnswers, setCorrectAnswers] = useState([]);
+  console.log("correctAns " + correctAnswers);
   const [score, setScore] = useState(0);
-  console.log(score);
+  console.log("score " + score);
 
   const handleNext = () => {
-    if (selectedAnswer === questions[currentQuestion].answer) {
+    if (userAnswers[currentQuestion] === questions[currentQuestion].answer) {
       setScore(score + questions[currentQuestion].points);
     }
+
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     }
@@ -42,6 +44,22 @@ const Quiz = () => {
   const handleRestart = () => {
     setScore(0);
     setCurrentQuestion(0);
+    setUserAnswers([]);
+    setCorrectAnswers([]);
+  };
+
+  const handleAnswerChange = (e) => {
+    const newAnswers = [...userAnswers];
+    newAnswers[currentQuestion] = e.target.value;
+    setUserAnswers(newAnswers);
+
+    const newCorrectAnswers = [...correctAnswers];
+    if (e.target.value === questions[currentQuestion].answer) {
+      newCorrectAnswers[currentQuestion] = true;
+    } else {
+      newCorrectAnswers[currentQuestion] = false;
+    }
+    setCorrectAnswers(newCorrectAnswers);
   };
 
   return (
@@ -52,14 +70,16 @@ const Quiz = () => {
           <Typography variant="h5">
             {questions[currentQuestion].question}
           </Typography>
-          <RadioGroup>
+          <RadioGroup
+            value={userAnswers[currentQuestion] || ""}
+            onChange={handleAnswerChange}
+          >
             {questions[currentQuestion].choices.map((choice, index) => (
               <FormControlLabel
                 key={index}
                 value={choice}
                 control={<Radio />}
                 label={choice}
-                onChange={(e) => setSelectedAnswer(e.target.value)}
               />
             ))}
           </RadioGroup>
@@ -68,7 +88,7 @@ const Quiz = () => {
               variant="contained"
               sx={{ mt: 2 }}
               onClick={handlePrev}
-              startIcon=<ArrowBackIcon />
+              startIcon={<ArrowBackIcon />}
             >
               Previous
             </Button>
